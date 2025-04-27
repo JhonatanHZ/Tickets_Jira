@@ -45,3 +45,29 @@ app.post("/InsertCoinValue", async (req, res) => {
         }
     }
 });
+
+app.post("/GetCoinValue", async (req, res) => {
+    const { name, date} = req.body;
+    console.log(date);
+
+    try {
+        let response = await pool.query(
+            "SELECT VALUE FROM COIN_VALUES WHERE NAME = ? AND DATE = ?;",
+            [name, date]
+        );
+
+        let responseObject = {
+            value: response[0][0].VALUE
+        }
+
+        res.status(200).json(responseObject);
+    } catch (error) {
+        if (error.code === 'ER_DUP_ENTRY') {
+            console.warn("Registro duplicado detectado:", error.message);
+            res.status(409).send("Registro duplicado, operación ignorada");
+        } else {
+            console.error("Error al insertar la información de la moneda:", error);
+            res.status(500).send("Error al insertar la información de la moneda");
+        }
+    }
+});
