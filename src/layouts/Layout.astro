@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es-Es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Basics</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	html{
+		font-size: 16px;
+	}
+	body{
+		width: 100vw;
+		height: 100vh;
+		margin: 0;
+		padding: 0;
+		background-image: url("backgroundChart.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+		background-size: 100vw 100vh;
+	}
+</style>

@@ -1,0 +1,11 @@
+.DateSelectorInput{
+    background-color: orange;
+    border-style: none;
+    width: 10em;
+    height: 3em;
+    font-weight: bold;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}

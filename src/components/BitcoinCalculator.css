@@ -1,0 +1,36 @@
+.InitialInvestment{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-self: center;
+    max-width: 500px;
+    row-gap: 10%;
+}
+
+.InputContainer{
+    height: 100%;
+    width: 85%;
+    background-color: white;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    border-radius: 30px;
+}
+
+.InputContainer img{
+    grid-column: 1;
+    justify-self: center;
+
+}
+
+.MoneyInput{
+    width: 95%;
+    height: 80%;
+    grid-column: 2;
+    border-style: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 32px;
+}

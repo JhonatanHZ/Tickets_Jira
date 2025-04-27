@@ -1,0 +1,17 @@
+.CurrentValueContainer{
+    background-color: #00B63E;
+    border-radius: 10px;
+    width: 10em;
+    height: 3.3em;
+    align-items: center;
+    display: flex;
+
+}
+
+.CurrentValueContainer h2{
+    width: 100%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-indent: 5%;
+    text-align: left;
+}

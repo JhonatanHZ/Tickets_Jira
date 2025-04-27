@@ -1,0 +1,36 @@
+{
+  "name": "tickets-jira",
+  "name": "tickets-jira",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "concurrently \"nodemon server.js\" \"astro dev\"",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^4.2.3",
+    "@astrojs/tailwind": "^6.0.2",
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/core": "^7.2.0",
+    "@capacitor/ios": "^7.2.0",
+    "@rollup/wasm-node": "^4.40.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.2",
+    "astro": "^5.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mysql": "^2.18.1",
+    "mysql2": "^3.14.0",
+    "papaparse": "^5.5.2",
+    "react": "^19.1.0",
+    "react-datepicker": "^8.3.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^7.2.0",
+    "concurrently": "^9.1.2"
+  }
+}
